@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wvd-SF-aif">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Call ScreenVC-->
+        <scene sceneID="PL6-rq-4Z2">
+            <objects>
+                <viewController id="Q5U-bm-6IJ" customClass="callScreenVC" customModule="Assignment_2_dialpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E0a-gg-G0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Bd4-GH-ddq"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="53m-6V-ZIz">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="HI9-me-qNN">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <action selector="close" destination="Q5U-bm-6IJ" id="E0R-0T-2KO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khX-Pi-TGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3314" y="1469"/>
+        </scene>
+        <!--Login Controller-->
+        <scene sceneID="fSD-R4-kBj">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Wvd-SF-aif" customClass="LoginController" customModule="Assignment_2_dialpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgo-X8-mzh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lov-ZN-zfD">
+                                <rect key="frame" x="0.0" y="-105.33333333333333" width="414" height="300.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TVk-3K-OEb">
+                                        <rect key="frame" x="183" y="198" width="66" height="24.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="7yn-pF-y84"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.30684957236612992" green="0.42827510657058243" blue="0.99333137270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TVk-3K-OEb" secondAttribute="bottom" constant="78" id="9Um-ca-YBZ"/>
+                                    <constraint firstItem="TVk-3K-OEb" firstAttribute="centerY" secondItem="Lov-ZN-zfD" secondAttribute="centerY" multiplier="1.4" id="Iwx-EO-DFg"/>
+                                    <constraint firstItem="TVk-3K-OEb" firstAttribute="centerX" secondItem="Lov-ZN-zfD" secondAttribute="centerX" constant="9" id="aOd-xv-Uad"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="8V3-1x-PaD">
+                                <rect key="frame" x="82.666666666666671" y="343.33333333333326" width="248.66666666666663" height="388.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-dT-WrV">
+                                        <rect key="frame" x="0.0" y="0.0" width="248.66666666666666" height="209"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect email or password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iio-ch-gQL">
+                                                <rect key="frame" x="0.0" y="0.0" width="248.66666666666666" height="44.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-OX-EpL">
+                                                <rect key="frame" x="0.0" y="54.666666666666686" width="248.66666666666666" height="44.666666666666657"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90j-4Y-1hA">
+                                                <rect key="frame" x="0.0" y="109.33333333333337" width="248.66666666666666" height="45"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3P-Ac-6Hm">
+                                                <rect key="frame" x="0.0" y="164.33333333333337" width="248.66666666666666" height="44.666666666666657"/>
+                                                <state key="normal" title="Forgot password?"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="90j-4Y-1hA" firstAttribute="width" secondItem="1dE-OX-EpL" secondAttribute="width" id="ISF-VY-kS6"/>
+                                            <constraint firstItem="90j-4Y-1hA" firstAttribute="height" secondItem="1dE-OX-EpL" secondAttribute="height" id="azy-s8-thX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tJt-hj-EpL">
+                                        <rect key="frame" x="0.0" y="284.00000000000006" width="248.66666666666666" height="104.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHz-Vb-SSd">
+                                                <rect key="frame" x="0.0" y="0.0" width="248.66666666666666" height="45"/>
+                                                <color key="backgroundColor" red="0.31652965516288145" green="0.44421178687977114" blue="0.99333137270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="goToDialPad" destination="Wvd-SF-aif" eventType="touchUpInside" id="Xuw-d3-cUr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAQ-Ov-gfq">
+                                                <rect key="frame" x="0.0" y="60" width="248.66666666666666" height="44.666666666666657"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" name="AccentColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" red="0.36887965697344555" green="0.48380174163151163" blue="0.99333137270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.36887965700000003" green="0.4838017416" blue="0.99333137270000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dAQ-Ov-gfq" firstAttribute="height" secondItem="vHz-Vb-SSd" secondAttribute="height" id="Mo6-bn-Hti"/>
+                                            <constraint firstItem="dAQ-Ov-gfq" firstAttribute="width" secondItem="vHz-Vb-SSd" secondAttribute="width" id="NVI-67-jgk"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vHz-Vb-SSd" firstAttribute="height" secondItem="1dE-OX-EpL" secondAttribute="height" id="g4x-Fa-yyy"/>
+                                    <constraint firstItem="vHz-Vb-SSd" firstAttribute="width" secondItem="1dE-OX-EpL" secondAttribute="width" id="lgw-mr-CJ0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4z7-Hq-52r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8V3-1x-PaD" firstAttribute="centerY" secondItem="tgo-X8-mzh" secondAttribute="centerY" multiplier="1.2" id="FoH-yd-we6"/>
+                            <constraint firstItem="1dE-OX-EpL" firstAttribute="height" secondItem="tgo-X8-mzh" secondAttribute="height" multiplier="0.05" id="GS9-ze-oUC"/>
+                            <constraint firstItem="Lov-ZN-zfD" firstAttribute="top" secondItem="tgo-X8-mzh" secondAttribute="top" constant="-105.33333333333333" id="Oi4-fx-5xz"/>
+                            <constraint firstItem="1dE-OX-EpL" firstAttribute="width" secondItem="tgo-X8-mzh" secondAttribute="width" multiplier="0.6" id="QGm-ta-0UT"/>
+                            <constraint firstItem="8V3-1x-PaD" firstAttribute="centerX" secondItem="tgo-X8-mzh" secondAttribute="centerX" id="ToU-mg-jaG"/>
+                            <constraint firstItem="Lov-ZN-zfD" firstAttribute="width" secondItem="tgo-X8-mzh" secondAttribute="width" id="lmu-eO-Ig9"/>
+                            <constraint firstItem="Lov-ZN-zfD" firstAttribute="centerY" secondItem="tgo-X8-mzh" secondAttribute="centerY" multiplier="0.1" id="ooE-LK-ttw"/>
+                            <constraint firstItem="Lov-ZN-zfD" firstAttribute="centerX" secondItem="tgo-X8-mzh" secondAttribute="centerX" id="uLu-hA-uie"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="1dE-OX-EpL" id="XI4-5R-iF1"/>
+                        <outlet property="errorLabel" destination="Iio-ch-gQL" id="UZ0-Pm-GqU"/>
+                        <outlet property="holderStack" destination="8V3-1x-PaD" id="waZ-17-AvR"/>
+                        <outlet property="password" destination="90j-4Y-1hA" id="haj-ub-Q0k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ycu-Td-2Oa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695.6521739130435" y="-2302.2321428571427"/>
+        </scene>
+        <!--Dial pad-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="dialPadVc" id="BYZ-38-t0r" customClass="dialPadVC" customModule="Assignment_2_dialpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spQ-Bb-my1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="TGd-9I-ESF">
+                                <rect key="frame" x="62" y="499.66666666666669" width="290" height="66.333333333333314"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndg-kp-aR6" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="66.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ndg-kp-aR6" secondAttribute="height" multiplier="1:1" id="MML-o3-ht2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgC-eU-q9c" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="111.66666666666666" y="0.0" width="66.666666666666657" height="66.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zgC-eU-q9c" secondAttribute="height" multiplier="1:1" id="d3g-du-GjQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4m-eI-bpg" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="223.33333333333329" y="0.0" width="66.666666666666657" height="66.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G4m-eI-bpg" secondAttribute="height" multiplier="1:1" id="UPp-nd-5Gc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="3hV-pU-okg">
+                                <rect key="frame" x="62" y="588.33333333333337" width="290" height="66.666666666666629"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jB9-bo-DiY" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jB9-bo-DiY" secondAttribute="height" multiplier="1:1" id="CR9-Ib-Uhi"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-29-xRO" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="111.66666666666666" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DIO-29-xRO" secondAttribute="height" multiplier="1:1" id="CGo-Ou-oMn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArO-0x-LnE" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="223.33333333333329" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ArO-0x-LnE" secondAttribute="height" multiplier="1:1" id="B8R-eU-fga"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="qIE-4c-LKw">
+                                <rect key="frame" x="62" y="677" width="290" height="66.666666666666629"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDQ-Gt-FR8" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bDQ-Gt-FR8" secondAttribute="height" multiplier="1:1" id="VkJ-IX-8ES"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWM-ru-hkt" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="111.66666666666666" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oWM-ru-hkt" secondAttribute="height" multiplier="1:1" id="2y8-Om-wh3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MyU-IQ-92r" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="223.33333333333329" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MyU-IQ-92r" secondAttribute="height" multiplier="1:1" id="kMz-Gt-7G9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="wzU-6H-W9Y">
+                                <rect key="frame" x="62" y="322" width="290" height="66.666666666666686"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sf-YG-Yt7" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2Sf-YG-Yt7" secondAttribute="height" multiplier="1:1" id="6pf-YS-jCk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcL-4k-Bzn" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="111.66666666666666" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tcL-4k-Bzn" secondAttribute="height" multiplier="1:1" id="CS3-wC-CYz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPY-bF-1t9" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="223.33333333333329" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WPY-bF-1t9" secondAttribute="height" multiplier="1:1" id="BTA-Yh-YbO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="70D-eY-ayQ">
+                                <rect key="frame" x="62" y="410.66666666666669" width="290" height="66.666666666666686"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxk-Pb-Nsz" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vxk-Pb-Nsz" secondAttribute="height" multiplier="1:1" id="IR3-6Q-thS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnM-G4-7pr" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="111.66666666666666" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lnM-G4-7pr" secondAttribute="height" multiplier="1:1" id="HIW-VG-8vk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsx-ei-WTO" customClass="MyView" customModule="Assignment_2_dialpad" customModuleProvider="target">
+                                        <rect key="frame" x="223.33333333333329" y="0.0" width="66.666666666666657" height="66.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xsx-ei-WTO" secondAttribute="height" multiplier="1:1" id="hZy-A5-zWY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xE5-W1-sFX">
+                                <rect key="frame" x="163.66666666666666" y="276" width="87" height="30"/>
+                                <state key="normal" title="Add Number"/>
+                                <connections>
+                                    <action selector="pushCallScreen" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ISA-gX-hZm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XD-yc-CMv">
+                                <rect key="frame" x="207" y="246" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qIE-4c-LKw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nX-uc-TEc"/>
+                            <constraint firstItem="70D-eY-ayQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2o3-FF-RUc"/>
+                            <constraint firstItem="TGd-9I-ESF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="3I6-g5-AUp"/>
+                            <constraint firstItem="3hV-pU-okg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Le-12-Y4t"/>
+                            <constraint firstItem="qIE-4c-LKw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.6" id="5j3-oR-AiG"/>
+                            <constraint firstItem="TGd-9I-ESF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6DL-7S-ZDg"/>
+                            <constraint firstItem="3hV-pU-okg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="ED3-zY-g1v"/>
+                            <constraint firstItem="qIE-4c-LKw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="Ecx-xa-Bp8"/>
+                            <constraint firstItem="TGd-9I-ESF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="INm-AG-Pqi"/>
+                            <constraint firstItem="wzU-6H-W9Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="LmG-BF-JxO"/>
+                            <constraint firstItem="wzU-6H-W9Y" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="ON6-MK-Mgy"/>
+                            <constraint firstItem="wzU-6H-W9Y" firstAttribute="top" secondItem="xE5-W1-sFX" secondAttribute="bottom" constant="16" id="QXh-WI-ZYN"/>
+                            <constraint firstItem="3hV-pU-okg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="RFw-PV-YVT"/>
+                            <constraint firstItem="xE5-W1-sFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uub-aW-U1m"/>
+                            <constraint firstItem="xE5-W1-sFX" firstAttribute="top" secondItem="2XD-yc-CMv" secondAttribute="bottom" constant="30" id="clf-eR-GhV"/>
+                            <constraint firstItem="qIE-4c-LKw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="dqt-8n-jbh"/>
+                            <constraint firstItem="3hV-pU-okg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" id="iBe-bb-s77"/>
+                            <constraint firstItem="wzU-6H-W9Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l16-Nh-s6j"/>
+                            <constraint firstItem="2XD-yc-CMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="quZ-Zh-657"/>
+                            <constraint firstItem="70D-eY-ayQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="r04-EV-Xig"/>
+                            <constraint firstItem="TGd-9I-ESF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.075" id="tcN-va-HnH"/>
+                            <constraint firstItem="wzU-6H-W9Y" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="tu2-0g-DeP"/>
+                            <constraint firstItem="70D-eY-ayQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="udQ-c5-5Yr"/>
+                            <constraint firstItem="70D-eY-ayQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="xHB-kD-X4g"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Dial pad" id="Vq0-EP-Q8C"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="but0" destination="DIO-29-xRO" id="vPj-U9-F2r"/>
+                        <outlet property="but1" destination="2Sf-YG-Yt7" id="rqV-7G-MYP"/>
+                        <outlet property="but2" destination="tcL-4k-Bzn" id="sHB-ja-KzF"/>
+                        <outlet property="but3" destination="WPY-bF-1t9" id="kqc-aH-BSY"/>
+                        <outlet property="but4" destination="vxk-Pb-Nsz" id="kkN-fp-mWx"/>
+                        <outlet property="but5" destination="lnM-G4-7pr" id="Nel-En-PhO"/>
+                        <outlet property="but6" destination="xsx-ei-WTO" id="apA-1o-m5d"/>
+                        <outlet property="but7" destination="Ndg-kp-aR6" id="k2i-Ys-RGD"/>
+                        <outlet property="but8" destination="zgC-eU-q9c" id="dZO-LH-5Pc"/>
+                        <outlet property="but9" destination="G4m-eI-bpg" id="nd9-KO-exk"/>
+                        <outlet property="butCall" destination="oWM-ru-hkt" id="NOa-s6-NNl"/>
+                        <outlet property="butClear" destination="MyU-IQ-92r" id="NmX-WF-BLo"/>
+                        <outlet property="butEmpty" destination="bDQ-Gt-FR8" id="Hq6-4X-kjk"/>
+                        <outlet property="butHashtag" destination="ArO-0x-LnE" id="Bty-Fq-tui"/>
+                        <outlet property="butStar" destination="jB9-bo-DiY" id="xGA-mQ-Cb1"/>
+                        <outlet property="numLab" destination="2XD-yc-CMv" id="zFc-2w-zBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695.6521739130435" y="747.99107142857144"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="bbG-aD-OhZ">
+            <objects>
+                <viewController storyboardIdentifier="ContactsVC" id="IOb-Xh-akj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BsE-bQ-yOD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feI-jY-DKi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Contacts" id="qqP-9I-jnh"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K2q-ye-SZg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.2.fill" catalog="system" id="1I3-Hb-hI4"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="TPj-rL-x5z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfN-zR-DEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="-170.08928571428569"/>
+        </scene>
+        <!--Recent-->
+        <scene sceneID="MAw-6J-9CV">
+            <objects>
+                <viewController id="jXa-TZ-bih" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bd-9c-XnO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-jd-znl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Recent" id="ls5-0e-9Wh"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DVk-Ml-YgY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recent" image="clock.fill" catalog="system" id="iNu-R2-A0p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kkQ-QO-Url" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679.71014492753625" y="-170.08928571428569"/>
+        </scene>
+        <!--Favourites-->
+        <scene sceneID="Wpa-7D-1ax">
+            <objects>
+                <viewController id="LsN-zu-9g1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTl-Ax-0cu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2NL-dS-535">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Favourites" id="vm6-vj-chE"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HLO-Gu-Pcu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="star.fill" catalog="system" id="t27-JB-dMg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4x-Qk-oCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507.24637681159425" y="-170.08928571428569"/>
+        </scene>
+        <!--Keypad-->
+        <scene sceneID="0V4-6U-d5q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7WL-ZY-IxO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Keypad" image="circle.grid.3x3" catalog="system" id="gcA-fk-lDi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sOC-yt-xw1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rNi-pc-gjn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sw-DT-0sL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697.1014492753625" y="-170.08928571428569"/>
+        </scene>
+        <!--Call Screen Transparant Nav Bar-->
+        <scene sceneID="EL2-0Q-Wac">
+            <objects>
+                <navigationController storyboardIdentifier="callScreenVController" automaticallyAdjustsScrollViewInsets="NO" id="824-V5-Dzw" customClass="callScreenTransparantNavBar" customModule="Assignment_2_dialpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N01-Iw-UIe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q5U-bm-6IJ" kind="relationship" relationship="rootViewController" id="U9c-tO-48W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZW-VC-n4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="1469"/>
+        </scene>
+        <!--VoiceMail-->
+        <scene sceneID="cfK-Al-Dus">
+            <objects>
+                <viewController id="rNp-px-Dcv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="saH-nT-EnT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yws-TX-Fz9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="VoiceMail" id="lbl-gY-NT4"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ukq-yW-0ij"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="VoiceMail" image="recordingtape" catalog="system" id="wCn-Ph-DSp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLU-4y-qWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3979.7101449275365" y="-170.08928571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kJ3-Ne-pYN">
+            <objects>
+                <tabBarController storyboardIdentifier="tabControllerId" automaticallyAdjustsScrollViewInsets="NO" id="ZXa-gL-BPn" customClass="tabBarController" customModule="Assignment_2_dialpad" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oqU-xE-deM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LsN-zu-9g1" kind="relationship" relationship="viewControllers" id="HZt-bN-Khm"/>
+                        <segue destination="jXa-TZ-bih" kind="relationship" relationship="viewControllers" id="EQq-22-10x"/>
+                        <segue destination="7WL-ZY-IxO" kind="relationship" relationship="viewControllers" id="zGZ-gh-ofX"/>
+                        <segue destination="IOb-Xh-akj" kind="relationship" relationship="viewControllers" id="mTI-yx-Cez"/>
+                        <segue destination="rNp-px-Dcv" kind="relationship" relationship="viewControllers" id="5Qi-Ou-r2v"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6VE-k8-Nd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697" y="-1319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="recordingtape" catalog="system" width="128" height="60"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
