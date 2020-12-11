@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,27 +16,15 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIs-1C-dVF">
-                        <rect key="frame" x="16" y="20" width="75" height="4"/>
-                        <state key="normal" title="Button" image="line.horizontal.3" catalog="system"/>
-                    </button>
-                </subviews>
-                <constraints>
-                    <constraint firstItem="KIs-1C-dVF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="5v9-IY-qFs"/>
-                    <constraint firstItem="KIs-1C-dVF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="JLX-cv-4hG"/>
-                    <constraint firstAttribute="bottom" secondItem="KIs-1C-dVF" secondAttribute="bottom" constant="20" symbolic="YES" id="Slq-gf-uzc"/>
-                    <constraint firstItem="KIs-1C-dVF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="n1c-O5-gfY"/>
-                </constraints>
+                <color key="backgroundColor" systemColor="systemIndigoColor"/>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <connections>
-                <outlet property="btn" destination="KIs-1C-dVF" id="eUh-t0-CIm"/>
-            </connections>
             <point key="canvasLocation" x="142" y="113"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

@@ -17,8 +17,9 @@ class BurgerMenuItemCell: UITableViewCell {
    
     @IBOutlet var btn : UIButton!
     private var model: burgerMenuItemModel!
-    @IBAction func HandleButton(){
     
+    @IBAction func HandleButton(){
+   
     }
     func configure(with model:burgerMenuItemModel){
         btn.setTitle(model.label, for: .normal)

@@ -17,10 +17,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iW-hF-TyT">
-                        <rect key="frame" x="20" y="20" width="46" height="4"/>
-                        <state key="normal" title="Button"/>
+                        <rect key="frame" x="20" y="20" width="51" height="4"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="bold"/>
+                        </state>
                         <connections>
-                            <action selector="HandleButton" destination="-1" eventType="touchDragInside" id="sR0-bL-xpV"/>
+                            <action selector="HandleButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FxA-0m-zw6"/>
                         </connections>
                     </button>
                 </subviews>

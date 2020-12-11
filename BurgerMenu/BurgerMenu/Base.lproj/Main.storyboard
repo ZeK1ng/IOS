@@ -16,30 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-Rv-DBC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rqv-Rv-DBC">
+                                <rect key="frame" x="0.0" y="84" width="414" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="tyE-0L-PBa"/>
+                                    <constraint firstAttribute="height" constant="200" id="MYi-Sm-uKd"/>
                                 </constraints>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Rqv-Rv-DBC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IjO-Ot-2e6"/>
-                            <constraint firstAttribute="bottom" secondItem="Rqv-Rv-DBC" secondAttribute="bottom" id="V8Y-T0-54V"/>
-                            <constraint firstItem="Rqv-Rv-DBC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V9K-zl-B8k"/>
-                            <constraint firstItem="Rqv-Rv-DBC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eo6-aB-Zxf"/>
+                            <constraint firstItem="Rqv-Rv-DBC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FHH-R7-ddS"/>
+                            <constraint firstItem="Rqv-Rv-DBC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Ri0-SX-ASp"/>
+                            <constraint firstItem="Rqv-Rv-DBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eUS-OP-a3J"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="V8Y-T0-54V"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="table" destination="Rqv-Rv-DBC" id="AJt-z3-Slf"/>
+                        <outlet property="tableHeight" destination="MYi-Sm-uKd" id="enE-pY-mcr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
