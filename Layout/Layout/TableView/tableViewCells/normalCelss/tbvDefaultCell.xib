@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="tbvDefaultCell" customModule="Layout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="bfp-4J-Px7">
+                        <rect key="frame" x="20" y="4" width="280" height="36"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="me2-Cd-31V"/>
+                            <constraint firstAttribute="width" constant="280" id="t0R-xt-zD4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bfp-4J-Px7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H92-gv-0MH"/>
+                    <constraint firstItem="bfp-4J-Px7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="JdE-9M-bH3"/>
+                    <constraint firstItem="bfp-4J-Px7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MPS-2N-Cur"/>
+                    <constraint firstItem="bfp-4J-Px7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="gJM-Kp-cBs"/>
+                    <constraint firstAttribute="trailing" secondItem="bfp-4J-Px7" secondAttribute="trailing" constant="20" id="nxw-rV-og7"/>
+                    <constraint firstAttribute="bottom" secondItem="bfp-4J-Px7" secondAttribute="bottom" constant="4" id="rGf-Dm-blD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="v" destination="bfp-4J-Px7" id="BpL-hO-pL7"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
