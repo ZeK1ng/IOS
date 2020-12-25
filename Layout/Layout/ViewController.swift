@@ -27,7 +27,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 44
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,7 +40,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             return cell
         }
         let Specialcell = table.dequeueReusableCell(withIdentifier: "tbvSpecialCell",for:indexPath)
-        if let cell1 = Specialcell as? tbvDefaultCell{
+        if let cell1 = Specialcell as? tbvSpecialCell{
             cell1.configure()
         }
        
@@ -60,5 +60,13 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 124
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 1 {
+             return 150
+        } else {
+            return 66
+        }
+    }
+    
 }
 

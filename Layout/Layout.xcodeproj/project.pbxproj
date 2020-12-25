@@ -13,12 +13,14 @@
 		696F444A25950E1900BD7EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696F444825950E1900BD7EBC /* Main.storyboard */; };
 		696F444C25950E1C00BD7EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696F444B25950E1C00BD7EBC /* Assets.xcassets */; };
 		696F444F25950E1C00BD7EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696F444D25950E1C00BD7EBC /* LaunchScreen.storyboard */; };
-		696F44672595154C00BD7EBC /* tbvSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F44652595154C00BD7EBC /* tbvSpecialCell.swift */; };
-		696F44682595154C00BD7EBC /* tbvSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F44662595154C00BD7EBC /* tbvSpecialCell.xib */; };
 		696F446D2595157A00BD7EBC /* tbvDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F446B2595157A00BD7EBC /* tbvDefaultCell.swift */; };
 		696F446E2595157A00BD7EBC /* tbvDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F446C2595157A00BD7EBC /* tbvDefaultCell.xib */; };
 		696F4476259518C700BD7EBC /* tbvHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F4475259518C700BD7EBC /* tbvHeader.swift */; };
 		696F447A259518D500BD7EBC /* tbvHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F4479259518D500BD7EBC /* tbvHeader.xib */; };
+		696F447F2595C60000BD7EBC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F447D2595C60000BD7EBC /* CollectionViewCell.swift */; };
+		696F44802595C60000BD7EBC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F447E2595C60000BD7EBC /* CollectionViewCell.xib */; };
+		696F4492259642AC00BD7EBC /* tbvSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696F4490259642AC00BD7EBC /* tbvSpecialCell.swift */; };
+		696F4493259642AC00BD7EBC /* tbvSpecialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696F4491259642AC00BD7EBC /* tbvSpecialCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +32,14 @@
 		696F444B25950E1C00BD7EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		696F444E25950E1C00BD7EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		696F445025950E1C00BD7EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		696F44652595154C00BD7EBC /* tbvSpecialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tbvSpecialCell.swift; sourceTree = "<group>"; };
-		696F44662595154C00BD7EBC /* tbvSpecialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tbvSpecialCell.xib; sourceTree = "<group>"; };
 		696F446B2595157A00BD7EBC /* tbvDefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tbvDefaultCell.swift; sourceTree = "<group>"; };
 		696F446C2595157A00BD7EBC /* tbvDefaultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tbvDefaultCell.xib; sourceTree = "<group>"; };
 		696F4475259518C700BD7EBC /* tbvHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tbvHeader.swift; sourceTree = "<group>"; };
 		696F4479259518D500BD7EBC /* tbvHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tbvHeader.xib; sourceTree = "<group>"; };
+		696F447D2595C60000BD7EBC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		696F447E2595C60000BD7EBC /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		696F4490259642AC00BD7EBC /* tbvSpecialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tbvSpecialCell.swift; sourceTree = "<group>"; };
+		696F4491259642AC00BD7EBC /* tbvSpecialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tbvSpecialCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +123,20 @@
 		696F445E259514C200BD7EBC /* specialCells */ = {
 			isa = PBXGroup;
 			children = (
-				696F44652595154C00BD7EBC /* tbvSpecialCell.swift */,
-				696F44662595154C00BD7EBC /* tbvSpecialCell.xib */,
+				696F447C2595C5DF00BD7EBC /* collectionViewCells */,
+				696F4490259642AC00BD7EBC /* tbvSpecialCell.swift */,
+				696F4491259642AC00BD7EBC /* tbvSpecialCell.xib */,
 			);
 			path = specialCells;
+			sourceTree = "<group>";
+		};
+		696F447C2595C5DF00BD7EBC /* collectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				696F447D2595C60000BD7EBC /* CollectionViewCell.swift */,
+				696F447E2595C60000BD7EBC /* CollectionViewCell.xib */,
+			);
+			path = collectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,11 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				696F444F25950E1C00BD7EBC /* LaunchScreen.storyboard in Resources */,
+				696F44802595C60000BD7EBC /* CollectionViewCell.xib in Resources */,
 				696F447A259518D500BD7EBC /* tbvHeader.xib in Resources */,
 				696F446E2595157A00BD7EBC /* tbvDefaultCell.xib in Resources */,
 				696F444C25950E1C00BD7EBC /* Assets.xcassets in Resources */,
 				696F444A25950E1900BD7EBC /* Main.storyboard in Resources */,
-				696F44682595154C00BD7EBC /* tbvSpecialCell.xib in Resources */,
+				696F4493259642AC00BD7EBC /* tbvSpecialCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,9 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696F44672595154C00BD7EBC /* tbvSpecialCell.swift in Sources */,
+				696F4492259642AC00BD7EBC /* tbvSpecialCell.swift in Sources */,
 				696F444725950E1900BD7EBC /* ViewController.swift in Sources */,
 				696F446D2595157A00BD7EBC /* tbvDefaultCell.swift in Sources */,
+				696F447F2595C60000BD7EBC /* CollectionViewCell.swift in Sources */,
 				696F444325950E1900BD7EBC /* AppDelegate.swift in Sources */,
 				696F444525950E1900BD7EBC /* SceneDelegate.swift in Sources */,
 				696F4476259518C700BD7EBC /* tbvHeader.swift in Sources */,

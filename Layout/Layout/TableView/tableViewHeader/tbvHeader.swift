@@ -16,4 +16,8 @@ class tbvHeader:UITableViewHeaderFooterView{
         view2.layer.cornerRadius = 8
         
     }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.contentView.backgroundColor = .white
+    }
 }
