@@ -33,9 +33,14 @@ class ViewController: UIViewController {
 //        print(ContactBook.frame.width/4)
         if contacts.count > 0 {
             for cell in ContactBook.visibleCells{
-                print(cell.frame.width == cell.frame.height)
+             
                 guard let c = cell as? ContactCell else { return }
-                c.initialsView.layer.cornerRadius = (c.initialsView.frame.width)/4
+                c.initialsView.layer.cornerRadius = (c.initialsView.frame.width)/2
+
+                c.layoutIfNeeded()
+                c.contentView.layoutIfNeeded()
+                cell.layoutIfNeeded()
+                cell.contentView.layoutIfNeeded()
             }
         }
     }
@@ -77,8 +82,11 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { [unowned self] _ in
             let contact = contacts[indexPath.row]
             db.delete(contact)
-            self.fetchData()
-//            collectionView.deleteItems(at: [indexPath])
+            do{
+                try db.save()
+                self.fetchData()
+            }catch{}
+         
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         present(alert, animated: true, completion: nil)
@@ -188,9 +196,13 @@ extension ViewController: UICollectionViewDataSource {
             newCell.number.text = contact.number
             newCell.name.text = nameArr[0]
             newCell.initials.text = initials
-            newCell.initialsView.layer.cornerRadius = newCell.initialsView.frame.width/4
+            newCell.layoutIfNeeded()
+            newCell.contentView.layoutIfNeeded()
         }
+        cell.contentView.layoutIfNeeded()
+        cell.layoutIfNeeded()
         return cell
+        
     }
     
 }

@@ -24,6 +24,7 @@ class ContactCell: UICollectionViewCell {
         mainView.layer.borderWidth = 1
         mainView.layer.borderColor = UIColor.lightGray.cgColor
         
+        
     }
     
     
