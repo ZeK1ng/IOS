@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var getSwifty: UITextField!
+    @IBOutlet var djrick: UITextField!
     @IBOutlet var profPic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,8 @@ class ViewController: UIViewController {
        // self.view.backgroundColor = UIColor(patternImage: UIImage(named: "retrowave.jpg")!)
         profPic.layer.cornerRadius = profPic.frame.size.width/2
         profPic.clipsToBounds = true
+        djrick.borderStyle = .none
+        getSwifty.borderStyle = .none
     }
 
 

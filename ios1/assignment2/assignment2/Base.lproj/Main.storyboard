@@ -26,32 +26,59 @@
                                     <constraint firstAttribute="width" constant="120" id="juM-or-KIQ"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-cf-DzS">
+                                <rect key="frame" x="128.5" y="204" width="157" height="68"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DJ RICK" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2O-i4-Lgf">
+                                        <rect key="frame" x="0.0" y="0.0" width="157" height="34"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="GET SCHWIFTY" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xWB-ta-rnj">
+                                        <rect key="frame" x="0.0" y="34" width="157" height="34"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="cyx-cf-DzS" firstAttribute="top" secondItem="SCr-PO-4ea" secondAttribute="bottom" constant="20" id="Dn5-LB-Vbf"/>
                             <constraint firstItem="OuL-d9-crm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Evh-It-ggG"/>
                             <constraint firstItem="OuL-d9-crm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HPf-AG-oZ5"/>
                             <constraint firstAttribute="trailing" secondItem="OuL-d9-crm" secondAttribute="trailing" id="YbA-gw-cth"/>
                             <constraint firstItem="SCr-PO-4ea" firstAttribute="centerX" secondItem="OuL-d9-crm" secondAttribute="centerX" id="fbx-FR-NDB"/>
                             <constraint firstItem="SCr-PO-4ea" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="fmY-Xo-a9c"/>
                             <constraint firstAttribute="bottom" secondItem="OuL-d9-crm" secondAttribute="bottom" id="pJ2-a5-mUP"/>
+                            <constraint firstItem="cyx-cf-DzS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r34-CA-ssx"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="djrick" destination="n2O-i4-Lgf" id="7yC-sY-gdO"/>
+                        <outlet property="getSwifty" destination="xWB-ta-rnj" id="OBb-Gp-dz6"/>
                         <outlet property="profPic" destination="SCr-PO-4ea" id="yRe-mO-aIO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="98"/>
+            <point key="canvasLocation" x="118.84057971014494" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
         <image name="retro1" width="1080" height="2160"/>
         <image name="rick1" width="842" height="1339"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
