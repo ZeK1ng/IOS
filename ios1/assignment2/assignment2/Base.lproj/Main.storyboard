@@ -43,6 +43,93 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9OR-2m-Vbp">
+                                <rect key="frame" x="52.5" y="325" width="309" height="246"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Top Tracks:" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-3Y-89G">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="34"/>
+                                        <color key="textColor" red="0.89677784974093266" green="0.89271738827802516" blue="0.0087736062324723467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Kavinsky Nightcall" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwa-fz-Ry3">
+                                        <rect key="frame" x="0.0" y="42" width="309" height="34"/>
+                                        <color key="textColor" systemColor="systemPurpleColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Super ultra new retrowave" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cj-lu-cMV">
+                                        <rect key="frame" x="0.0" y="84" width="309" height="34"/>
+                                        <color key="textColor" systemColor="systemPurpleColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I`m Alive(feat DJ MORTY)" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NjR-VJ-HNR">
+                                        <rect key="frame" x="0.0" y="126" width="309" height="34"/>
+                                        <color key="textColor" red="0.96384066339999996" green="0.80059462790000002" blue="0.26520130040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="G6B-Zn-hXn">
+                                        <rect key="frame" x="0.0" y="168" width="309" height="78"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RQE-DR-UNx">
+                                                <rect key="frame" x="8" y="12" width="96" height="46"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10M" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-ZV-Whu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="23"/>
+                                                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Views" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWU-sY-8ZP">
+                                                        <rect key="frame" x="0.0" y="23" width="96" height="23"/>
+                                                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Ty-bt-aoX">
+                                                <rect key="frame" x="104" y="12" width="96" height="46"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100M" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vl-jY-kwV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="23"/>
+                                                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Likes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTN-NG-547">
+                                                        <rect key="frame" x="0.0" y="23" width="96" height="23"/>
+                                                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5N9-kg-jLY">
+                                                <rect key="frame" x="200" y="12" width="96" height="46"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1Billion" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dQ-OW-N4y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="24"/>
+                                                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Subscribers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p0u-dn-0R8">
+                                                        <rect key="frame" x="0.0" y="24" width="96" height="22"/>
+                                                        <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="12" leading="8" bottom="20" trailing="13"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.020907545336787514" green="0.0" blue="0.0020149271605819836" alpha="0.36619718309859156" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,8 +138,10 @@
                             <constraint firstItem="OuL-d9-crm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Evh-It-ggG"/>
                             <constraint firstItem="OuL-d9-crm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HPf-AG-oZ5"/>
                             <constraint firstAttribute="trailing" secondItem="OuL-d9-crm" secondAttribute="trailing" id="YbA-gw-cth"/>
+                            <constraint firstItem="9OR-2m-Vbp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ana-Ih-Sb1"/>
                             <constraint firstItem="SCr-PO-4ea" firstAttribute="centerX" secondItem="OuL-d9-crm" secondAttribute="centerX" id="fbx-FR-NDB"/>
                             <constraint firstItem="SCr-PO-4ea" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="fmY-Xo-a9c"/>
+                            <constraint firstItem="9OR-2m-Vbp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lNu-VW-Hkw"/>
                             <constraint firstAttribute="bottom" secondItem="OuL-d9-crm" secondAttribute="bottom" id="pJ2-a5-mUP"/>
                             <constraint firstItem="cyx-cf-DzS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r34-CA-ssx"/>
                         </constraints>
@@ -60,7 +149,12 @@
                     <connections>
                         <outlet property="djrick" destination="n2O-i4-Lgf" id="7yC-sY-gdO"/>
                         <outlet property="getSwifty" destination="xWB-ta-rnj" id="OBb-Gp-dz6"/>
+                        <outlet property="midStackv" destination="9OR-2m-Vbp" id="scM-om-Z50"/>
+                        <outlet property="nm" destination="C7K-3Y-89G" id="AvX-6I-Ze6"/>
                         <outlet property="profPic" destination="SCr-PO-4ea" id="yRe-mO-aIO"/>
+                        <outlet property="txt1" destination="Fwa-fz-Ry3" id="czb-tx-LGr"/>
+                        <outlet property="txt11" destination="1cj-lu-cMV" id="Kwy-tI-Ogd"/>
+                        <outlet property="txt13" destination="NjR-VJ-HNR" id="PoU-cn-GSk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,6 +173,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
